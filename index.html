@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>畅享银角</title>
+
+  <link type="text/css" rel="stylesheet" href="css/style.css"/>
+  <script src="js/questions.js"></script>
+  <script src="js/functions.js"></script>
+  <script>
+    window.addEventListener("load",()=>{
+        renderQuiz();
+    })
+  </script>
+</head>
+<body>
+
+  <h1>真婆罗门都做这个</h1>
+  <p>一共20道题，每题5分。听声音正确选择发出声音的角色</p>
+  <p>如果你全对了你该请哈吉高了</p>
+  <p>警告⚠：公共场合点开小心点，太❤刺❤激❤</p>
+
+
+  <div id="quiz"></div>
+
+  <button onclick="submitQuiz()">梦想成为婆罗门</button>
+  <div id="resultBox" class="result-box hidden">
+    <div class="score-display">
+        <div class="score-number" id="scoreNumber">0</div>
+        <div class="score-label">总分</div>
+    </div>
+    <div class="result-image">
+        <img id="resultImage" alt="结果图示" />
+    </div>
+    <div class="result-comment" id="scoreComment">婆罗门可不能半路逃跑！哼哼，啊啊啊啊啊啊啊啊啊！</div>
+  </div>
+
+  
+</body>
+</html>
